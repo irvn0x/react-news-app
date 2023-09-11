@@ -6,6 +6,7 @@ import "./App.css";
 // Import Components
 import Container from "./assets/components/Container";
 import Navbar from "./assets/components/Navbar";
+import Error from "./assets/components/Error";
 
 function App() {
   return (

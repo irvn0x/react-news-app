@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./Navbar.module.css";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <div>
@@ -10,6 +10,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
