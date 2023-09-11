@@ -7,6 +7,7 @@ import "./App.css";
 import Container from "./assets/components/Container";
 import Navbar from "./assets/components/Navbar";
 import Error from "./assets/components/Error";
+import Loading from "./assets/components/Loading";
 
 function App() {
   return (
