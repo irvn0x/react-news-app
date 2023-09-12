@@ -7,6 +7,7 @@ import Container from "./components/Container";
 import Navbar from "./components/Navbar";
 import Error from "./components/Error";
 import Loading from "./components/Loading";
+import NewsList from "./components/NewsList";
 
 import { getNews } from "./services/getNews";
 
@@ -44,7 +45,7 @@ function App() {
           <Navbar />
           {loading && <Loading />}
           {error && <Error />}
-          {!loading && articles.length > 0 && <h1>Hello, Articles</h1>}
+          {!loading && articles.length > 0 && <NewsList articles={articles} />}
         </Container>
       </div>
     </>
