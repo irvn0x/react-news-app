@@ -24,6 +24,8 @@ function App() {
         searchQuery: "google",
       });
 
+      // console.log(res);
+
       if (!res) {
         setLoading(false);
         setError(true);
