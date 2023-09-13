@@ -8,6 +8,15 @@ const NewsList = ({ articles }) => {
   return (
     <div className={styles.NewsList}>
       {articles.map((article, index, arr) => {
+        /*
+        Tidak akan merender setiap data articles 
+        jika dia tidak memiliki urlToImage, author dan 
+        content 
+        */
+        if (!article.urlToImage || !article.author || !article.content) {
+          return null;
+        }
+
         return (
           <NewsCard
             key={index}
